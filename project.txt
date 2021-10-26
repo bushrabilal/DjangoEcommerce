@@ -1,0 +1,9 @@
+
+
+ecommrce  project
+   ecommerce
+   store - app
+   static
+      css
+      js
+      images

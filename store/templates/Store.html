@@ -1,0 +1,78 @@
+{% extends 'root.html' %}
+{% load static %}
+
+
+{% block content %}
+
+<div class="container">
+
+
+   <h3>Store page</h3>
+
+   <div class="row">
+
+              <div class="col-lg-3">
+
+                  <div class="product_box product">
+                      <img src="{%  static 'images/bataBlackjpg.jpg'  %}" class="thumbnail" />
+                      <h2>Product Name</h2>
+                      <hr />
+
+                      <button class="btn btn-outline-warning my-btn">Add to cart</button>
+                    <button class="btn btn-outline-success my-btn">Details</button>
+                      <span class="price">200 Rs</span>
+                  </div>
+
+              </div>
+
+
+             <div class="col-lg-3">
+
+                  <div class="product_box product">
+                      <img src="{%  static 'images/joggers.jpg' %}" class="thumbnail" />
+                      <h2>Product Name</h2>
+                      <hr />
+
+                      <button class="btn btn-outline-warning my-btn">Add to cart</button>
+                    <button class="btn btn-outline-success my-btn">Details</button>
+                      <span class="price">200 Rs</span>
+                  </div>
+
+              </div>
+
+
+             <div class="col-lg-3">
+
+                  <div class="product_box product">
+                      <img src="{%  static 'images/Reebok.jpg' %}" class="thumbnail" />
+                      <h2>Product Name</h2>
+                      <hr />
+
+                      <button class="btn btn-outline-warning my-btn">Add to cart</button>
+                    <button class="btn btn-outline-success my-btn">Details</button>
+                      <span class="price">200 Rs</span>
+                  </div>
+
+              </div>
+
+
+             <div class="col-lg-3">
+
+                  <div class="product_box product">
+                      <img src="{%  static 'images/running-shoes.png' %}" class="thumbnail" />
+                      <h2>Product Name</h2>
+                      <hr />
+
+                      <button class="btn btn-outline-warning my-btn">Add to cart</button>
+                    <button class="btn btn-outline-success my-btn">Details</button>
+                      <span class="price">200 Rs</span>
+                  </div>
+
+              </div>
+
+
+          </div>
+
+    </div>
+
+{% endblock content %}
