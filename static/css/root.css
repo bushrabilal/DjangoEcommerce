@@ -61,3 +61,24 @@ box-shadow: 5px 4px 6px #ccc;
 .img_row{
 width:100px;
 }
+
+
+.quantity{
+   display: inline-block;
+   font-weight: 800;
+   padding-right: 10px;
+
+
+}
+
+.arrow-quan{
+    cursor: pointer;
+   display: block;
+   width:25px;
+   margin-top:10px;
+   transition:5s;
+}
+
+.arrow-quan:hover {
+    opacity: 0.5
+}
