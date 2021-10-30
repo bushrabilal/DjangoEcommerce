@@ -82,3 +82,12 @@ width:100px;
 .arrow-quan:hover {
     opacity: 0.5
 }
+
+
+.form-field {
+
+  display : inline-block;
+  padding: 6px;
+  width: 240px;
+
+}
