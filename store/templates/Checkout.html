@@ -1,8 +1,12 @@
 {% extends 'root.html' %}
-
+{% load static %}
 {% block content %}
 
-<div class="row">
+
+<div class="container">
+
+
+    <div class="row">
 
 
 <h3>Checkout page</h3>
@@ -62,10 +66,23 @@
 
                                 </div>
 
+                                <hr />
+
 
                             </div>
+                        <input class="btn btn-success btn-block" type="submit" value="Continue"/>
+
 
                  </form>
+
+                 <br />
+
+                 <div class="product_box hidden">
+
+                     <small>Paypal Options</small>
+
+                 </div>
+
 
 
              </div>
@@ -75,15 +92,36 @@
     </div>
  <div class="col-lg-6">
 
+
+
      <div class="product_box">
+
+         <a class="btn btn-outline-primary" href="{% url 'cart' %}">Back to Cart</a>
 
             <h3>Order Summary</h3>
 
+                 <div class="my-cart">
+                    <div  style="flex:2">
+                        <img class="img_row" src="{%  static 'images/joggers.jpg'  %}" /></div>
+                    <div style="flex:2"><p>Joggers</p>  </div>
+                    <div style="flex:1"><p>2400 Rs</p></div>
+
+                    <div style="flex:1">>x 2 </div>
+
+
          </div>
+                   <h4>Items: 2 </h4>
+                     <h4>Total Cost: 4800 Rs</h4>
+                    </div>
+
 
     </div>
 
 </div>
+
+</div>
+
+
 
 
 

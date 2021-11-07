@@ -39,22 +39,16 @@
 
 
       </ul>
-      <form class="form-inline my-2 my-lg-0">
+      <div class="form-inline my-2 my-lg-0">
+
       <a href="" class="btn btn-danger">Login</a>
 
          <a href="{% url 'cart' %}">
-        <img  class='cart_icon' src="{% static 'images/cart.png' %}" />
+            <img  class='cart_icon' src="{% static 'images/cart.png' %}" />
       </a>
-          <br />
+ <p class="cart_total">0</p>
 
-
-
-
-
-
-          <p class="cart_total">0</p>
-
-      </form>
+      </div>
 
     </div>
   </div>
