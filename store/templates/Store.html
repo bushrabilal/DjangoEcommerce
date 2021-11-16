@@ -10,65 +10,66 @@
    <h3>Store page</h3>
 
    <div class="row">
-
+              {% for product in products %}
               <div class="col-lg-3">
 
                   <div class="product_box product">
                       <img src="{%  static 'images/bataBlackjpg.jpg'  %}" class="thumbnail" />
-                      <h2>Product Name</h2>
+                      <h2>{{ product.name}}</h2>
                       <hr />
 
                       <button class="btn btn-outline-warning my-btn">Add to cart</button>
                     <button class="btn btn-outline-success my-btn">Details</button>
-                      <span class="price">200 Rs</span>
+                      <span class="price">{{product.price}} Rs</span>
                   </div>
 
               </div>
+           {% endfor %}
 
 
-             <div class="col-lg-3">
+<!--             <div class="col-lg-3">-->
 
-                  <div class="product_box product">
-                      <img src="{%  static 'images/joggers.jpg' %}" class="thumbnail" />
-                      <h2>Product Name</h2>
-                      <hr />
+<!--                  <div class="product_box product">-->
+<!--                      <img src="{%  static 'images/joggers.jpg' %}" class="thumbnail" />-->
+<!--                      <h2>Product Name</h2>-->
+<!--                      <hr />-->
 
-                      <button class="btn btn-outline-warning my-btn">Add to cart</button>
-                    <button class="btn btn-outline-success my-btn">Details</button>
-                      <span class="price">200 Rs</span>
-                  </div>
+<!--                      <button class="btn btn-outline-warning my-btn">Add to cart</button>-->
+<!--                    <button class="btn btn-outline-success my-btn">Details</button>-->
+<!--                      <span class="price">200 Rs</span>-->
+<!--                  </div>-->
 
-              </div>
-
-
-             <div class="col-lg-3">
-
-                  <div class="product_box product">
-                      <img src="{%  static 'images/Reebok.jpg' %}" class="thumbnail" />
-                      <h2>Product Name</h2>
-                      <hr />
-
-                      <button class="btn btn-outline-warning my-btn">Add to cart</button>
-                    <button class="btn btn-outline-success my-btn">Details</button>
-                      <span class="price">200 Rs</span>
-                  </div>
-
-              </div>
+<!--              </div>-->
 
 
-             <div class="col-lg-3">
+<!--             <div class="col-lg-3">-->
 
-                  <div class="product_box product">
-                      <img src="{%  static 'images/running-shoes.png' %}" class="thumbnail" />
-                      <h2>Product Name</h2>
-                      <hr />
+<!--                  <div class="product_box product">-->
+<!--                      <img src="{%  static 'images/Reebok.jpg' %}" class="thumbnail" />-->
+<!--                      <h2>Product Name</h2>-->
+<!--                      <hr />-->
 
-                      <button class="btn btn-outline-warning my-btn">Add to cart</button>
-                    <button class="btn btn-outline-success my-btn">Details</button>
-                      <span class="price">200 Rs</span>
-                  </div>
+<!--                      <button class="btn btn-outline-warning my-btn">Add to cart</button>-->
+<!--                    <button class="btn btn-outline-success my-btn">Details</button>-->
+<!--                      <span class="price">200 Rs</span>-->
+<!--                  </div>-->
 
-              </div>
+<!--              </div>-->
+
+
+<!--             <div class="col-lg-3">-->
+
+<!--                  <div class="product_box product">-->
+<!--                      <img src="{%  static 'images/running-shoes.png' %}" class="thumbnail" />-->
+<!--                      <h2>Product Name</h2>-->
+<!--                      <hr />-->
+
+<!--                      <button class="btn btn-outline-warning my-btn">Add to cart</button>-->
+<!--                    <button class="btn btn-outline-success my-btn">Details</button>-->
+<!--                      <span class="price">200 Rs</span>-->
+<!--                  </div>-->
+
+<!--              </div>-->
 
 
           </div>
