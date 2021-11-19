@@ -2,6 +2,7 @@
 {% load static %}
 {% block content %}
 
+
 <div class="container">
 
 
@@ -43,15 +44,17 @@
 
                 </div>
                 <div class="product_box product">
-
+                        {% for item in items %}
                     <div class="my-cart">
+
                     <div  style="flex:2">
-                        <img class="img_row" src="{%  static 'images/joggers.jpg'  %}" /></div>
-                    <div style="flex:2"><p>Joggers</p>  </div>
-                    <div style="flex:1"><p>2400 Rs</p></div>
+
+                        <img class="img_row" src="{{item.product.imageURl}}" /></div>
+                    <div style="flex:2"><p>{{item.product.name}}</p>  </div>
+                    <div style="flex:1"><p>{{item.product.price}} Rs</p></div>
 
                     <div style="flex:1">
-                        <p class="quantity">2</p>
+                        <p class="quantity">{{item.quantity}}</p>
                         <div class="quantity">
                             <img class="arrow-quan" src="{%  static 'images/arrow-top.png'  %}" />
                             <img class="arrow-quan" src="{%  static 'images/arrow-down.png'  %}" />
@@ -60,6 +63,7 @@
 
                     <div style="flex:1">4800 Rs</div>
                     </div>
+                    {% endfor %}
 
                 </div>
 
